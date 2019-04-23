@@ -1,6 +1,7 @@
 package application;
 
 
+import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
@@ -16,7 +17,7 @@ public class Program {
 		SellerDao sellerDao = DaoFactory.createSellerDao();
 		
 		System.out.println("===Teste 1 findById===");
-		Seller seller = sellerDao.findById(3);
+		Seller seller = sellerDao.findById(4);
 		System.out.println(seller);
 		
 
@@ -33,25 +34,25 @@ public class Program {
 			System.out.println(obj);
 		}
 		
-		/*System.out.println("\n===Teste 4 insert===");
+		System.out.println("\n===Teste 4 insert===");
 		Seller newSeller = new Seller( null, "Greg Black", "greg@gmail.com", new Date(), 4000.0, department);
 		sellerDao.insert(newSeller);
 		System.out.println("Inserted! New id " + newSeller.getId() );
 		
-		System.out.println("\n===Teste 5 insert===");
-		seller = sellerDao.findById(9);
+		System.out.println("\n===Teste 5 SellerUpdate===");
+		seller = sellerDao.findById(1);
 		seller.setName("Martha Stwart");
 		sellerDao.update(seller);
 		System.out.println("Update completed! ");
 		
 	
-		System.out.println("===\nTeste 5 deleteById===");
+		System.out.println("===\nTeste 6 deleteById===");
 		System.out.println("Insira um id para teste de deleção: ");
 		int id = sc.nextInt();
 		sellerDao.deleteById(id);
 		System.out.println("Delete completed! ");
 		sc.close();
-		*/
+		
 	}
 
 }
