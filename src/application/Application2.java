@@ -24,7 +24,6 @@ public class Application2 {
 		departmentDao.deleteById(sc.nextInt());
 		System.out.println("Department deleted! ");
 		
-		
 		System.out.println("\n===Test 3 updateDepartment===");
 		departmentDao.update(dep);
 		System.out.println("Department updated! ");
@@ -40,6 +39,7 @@ public class Application2 {
 			System.out.println("Id " + dp.getId() + " Name " + dp.getName());
 		}
 		
+		sc.close();
 	}
 
 }
